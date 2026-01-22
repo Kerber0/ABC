@@ -58,7 +58,7 @@ dependencies {
     // Lifecycle
     implementation(libs.androidx.lifecycle.runtime.ktx)
     // Utilizamos versiones fijas de lifecycle-*-compose para mantener compatibilidad
-    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.10.0")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.7.0")
 
     // CameraX y permisos
@@ -67,9 +67,12 @@ dependencies {
     implementation(libs.androidx.camera.lifecycle)
     implementation(libs.androidx.camera.compose)
     implementation(libs.accompanist.permissions)
+    implementation(libs.androidx.camera.view)
+
 
     // Coil para cargar imágenes por Uri
     implementation(libs.coil.compose)
+    implementation(libs.androidx.camera.view)
 
     // Testing
     testImplementation(libs.junit)
