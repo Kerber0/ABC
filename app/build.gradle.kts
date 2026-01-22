@@ -44,7 +44,7 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.activity.compose)
 
-    // Compose BOM
+    // Compose BOM y componentes
     implementation(platform(libs.androidx.compose.bom))
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.ui.graphics)
@@ -52,13 +52,24 @@ dependencies {
     implementation(libs.androidx.compose.material3)
     implementation(libs.androidx.compose.material.icons.extended)
 
-    // Navigation
+    // Navegación
     implementation(libs.androidx.navigation.compose)
 
     // Lifecycle
     implementation(libs.androidx.lifecycle.runtime.ktx)
+    // Utilizamos versiones fijas de lifecycle-*-compose para mantener compatibilidad
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
     implementation("androidx.lifecycle:lifecycle-runtime-compose:2.7.0")
+
+    // CameraX y permisos
+    implementation(libs.androidx.camera.core)
+    implementation(libs.androidx.camera.camera2)
+    implementation(libs.androidx.camera.lifecycle)
+    implementation(libs.androidx.camera.compose)
+    implementation(libs.accompanist.permissions)
+
+    // Coil para cargar imágenes por Uri
+    implementation(libs.coil.compose)
 
     // Testing
     testImplementation(libs.junit)
